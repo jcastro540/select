@@ -1,34 +1,33 @@
 {
-    "name": "select",
-    "version": "1.0.0",
-    "description": "Selector con buscador para angular 2 / 4 / 5 o superior",
-    "main": "bundles/select.umd.js",
-    "dependencies": {},
-    "devDependencies": {},
-    "module": "index.js",
-    "typings": "index.d.ts",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-      "Angular2",
-      "Angular4",
-      "Angular5"
-    ],
-    "author": "José Castro",
-    "license": "MIT",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/jcastro540/select"
-    },
-    "homepage": "https://github.com/jcastro540/select",
-    "bugs": {
-      "url": "https://github.com/jcastro540/select/issues"
-    },
-    "peerDependencies": {
-      "@angular/common": "^5.2.9",
-      "@angular/core": "^5.2.9",
-      "@angular/forms": "^5.2.9"
-    }
+  "name": "selector_uberflug",
+  "version": "1.0.6",
+  "description": "Selector con buscador para angular 2 / 4 / 5 o superior",
+  "main": "bundles/select.umd.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Angular2",
+    "Angular4",
+    "Angular5"
+  ],
+  "author": "José Castro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcastro540/select"
+  },
+  "homepage": "https://github.com/jcastro540/select",
+  "bugs": {
+    "url": "https://github.com/jcastro540/select/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/forms": "^5.2.9"
   }
-  
+}

@@ -52,6 +52,9 @@
                 console.log(_this.optionSelected);
             }, 50);
         };
+        SelectComponent.prototype.clear = function () {
+            this.optionSelected = {};
+        };
         SelectComponent.prototype.searchElement = function () {
             this.resultSearch = this.objectFindByKey(this.items, "name", this.search);
         };
@@ -75,9 +78,8 @@
         };
         SelectComponent.decorators = [
             { type: core.Component, args: [{
-                        selector: 'app-select',
-                        templateUrl: './select.component.html',
-                        styleUrls: ['./select.component.css']
+                        selector: 'selector-uberflug',
+                        template: "\n    <div class=\"dropdown\">\n  <button class=\"btn btn-default dropdown-toggle btn-block text-left\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\"\n    aria-haspopup=\"true\" aria-expanded=\"true\">\n    <span *ngIf=\"optionSelected\">\n      <span *ngIf=\"!optionSelected.id\">\n        {{configurations.placeholder}}\n      </span>\n      <span *ngIf=\"optionSelected.id\">\n        <span class=\"item-selected\" (click)=\"clear()\"></span>\n        {{optionSelected.name}}\n      </span>\n    </span>\n    <span class=\"caret\"></span>\n  </button>\n  <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\n    <li class=\"sticky-search\">\n      <input type=\"text\" class=\"form-control search-select\" [(ngModel)]=\"search\" [placeholder]=\"configurations.search_text\" (keyup)=\"searchElement()\">\n    </li>\n\n    <div *ngIf=\"resultSearch.length == 0 && items && carga\">\n      <li *ngFor=\"let item of items\" (click)=\"itemSelected(item)\" [ngClass]=\"{'selected': item.id == optionSelected.id}\">\n        <a>{{item.name}}</a>\n      </li>\n    </div>\n\n    <div *ngIf=\"resultSearch.length !== 0  && items && carga\">\n      <li *ngFor=\"let item of resultSearch\" (click)=\"itemSelected(item)\" [ngClass]=\"{'selected': item.id == optionSelected.id}\">\n        <a>{{item.name}}</a>\n      </li>\n    </div>\n\n  </ul>\n\n</div>\n  "
                     },] },
         ];
         /** @nocollapse */

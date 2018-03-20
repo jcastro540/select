@@ -87,3 +87,29 @@
     text-decoration: none;
     background-color: #F9BE00!important;
 }
+
+.item-selected::after{
+    content: "\2716";
+    position: absolute;
+    right: 10px;
+    font-size: 17px;
+    z-index: 99;
+    background: #fff;
+    width: 23px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+}
+
+.btn-default:hover, .btn-default:focus{
+    background-color: transparent;
+    border-color:  transparent;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+    background-color: transparent;
+    border-color:  transparent;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
