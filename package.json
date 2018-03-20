@@ -1,0 +1,26 @@
+{
+    "name": "select_uberflug",
+    "version": "1.0.0",
+    "description": "Selector con buscador",
+    "author": "Jose Castro, Uberflug",
+    "license": "MIT",
+    "scripts": {
+        "transpile": "ngc",
+        "package": "rollup -c",
+        "minify": "uglifyjs dist/bundles/select.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/select.umd.min.js",
+        "build": "npm run transpile && npm run package && npm run minify",
+        "build2": "rm -rf dist && tsc"
+    },
+    "devDependencies": {
+        "@angular/compiler": "^5.2.9",
+        "@angular/compiler-cli": "^5.2.9",
+        "rollup": "^0.57.1",
+        "typescript": "^2.7.2",
+        "uglify-js": "^3.3.16"
+    },
+    "dependencies": {
+        "@angular/common": "^5.2.9",
+        "@angular/core": "^5.2.9",
+        "@angular/forms": "^5.2.9"
+    }
+}

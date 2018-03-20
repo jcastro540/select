@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAY,EAAE,MAAO,iBAAiB,CAAC;AAChD,OAAO,EAAE,eAAe,EAAE,MAAM,oBAAoB,CAAC","sourcesContent":["export { SelectModule }  from './select.module';\nexport { SelectComponent } from './select.component';"]}

@@ -1,0 +1,33 @@
+{
+  "name": "select",
+  "version": "1.0.0",
+  "description": "Selector con buscador para angular 2 / 4 / 5 o superior",
+  "main": "bundles/select.umd.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Angular2",
+    "Angular4",
+    "Angular5"
+  ],
+  "author": "José Castro",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ion-book/demo119"
+  },
+  "homepage": "https://www.ion-book.com",
+  "bugs": {
+    "url": "https://github.com/ion-book/demo119/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/forms": "^5.2.9"
+  }
+}
